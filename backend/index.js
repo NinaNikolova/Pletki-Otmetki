@@ -2,12 +2,15 @@ import express, { request, response } from "express";
 import { PORT, mongoDBURL } from "./config.js";
 import mongoose from "mongoose";
 import { Knitting } from "./models/knittingModel.js";
-import knittingsRouter from './routes/knittingsRoute.js'
+import knittingsRouter from './routes/knittingsRoute.js';
+import cors from 'cors';
 
 const app = express();
 app.use(express.json());
+// app.use(cors());
+
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'http://localhost:5173',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],
 }))
