@@ -24,7 +24,7 @@ const knittingSchema = mongoose.Schema({
 
 },
     {
-        timestamp: true,
+        timestamps: true,
     });
 
 export const Knitting = mongoose.model('Knitting', knittingSchema);

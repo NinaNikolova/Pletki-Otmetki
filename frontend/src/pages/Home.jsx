@@ -74,7 +74,7 @@ const Home = () => {
                                     {knitting.gender}
                                 </td>
                                 <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
-                                    <img src={knitting.img} alt="My Image" />
+                                    <img src={knitting.img} alt={knitting.title} />
 
                                 </td>
                                 <td className='border border-slate-700 rounded-md text-center'>
