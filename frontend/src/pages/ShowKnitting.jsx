@@ -50,7 +50,7 @@ const ShowKnitting = () => {
             <span className='text-xl mr-4 text-gray-500'>Пол</span>
             <span>{knitting.gender}</span>
           </div>
-          <div className='my-4'>
+          <div className='max-w-xl mx-auto bg-cover bg-center'>
 
             <img src={knitting.img} alt={knitting.title} />
           </div>
